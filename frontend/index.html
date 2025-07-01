@@ -1,0 +1,367 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+ 
+    <style>
+      .newsletter-section {
+  background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+}
+
+.newsletter-section .card {
+  margin: 0 auto;
+}
+
+#subscribeAlert {
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+  .section-heading {
+    display: inline-block;
+    border-bottom: 4px solid purple;
+    padding-bottom: 0.3rem;
+  }
+
+    .why-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        transition: background 0.3s ease-in-out;
+      }
+
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+        border-radius: 10px;
+      }
+       #projectsContainer .card,
+  #clientsContainer .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  #carouselExample img {
+    height: 400px;
+    object-fit: cover;
+  }
+  #projectsContainer .card:hover,
+  #clientsContainer .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  #projectsContainer .btn {
+    transition: all 0.3s ease;
+    border-radius: 50px;
+  }
+
+  #projectsContainer .btn:hover {
+    background-color: purple;
+    color: white;
+    border-color: purple;
+  }
+    </style>
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg, #0d47a1, #1976d2);">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/logo.svg" alt="Logo" width="120" height="40" class="me-2">
+    </a>
+
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Optional Links -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#projectsContainer">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#aboutus">AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- About Us Section -->
+<section class="container py-5" id="aboutus">
+  <h2 class="text-center mb-4"><span class="section-heading">About Us</span></h2>
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <p class="lead text-center">
+        We are a creative digital agency committed to delivering cutting-edge solutions for businesses of all sizes.
+        Our team excels in building scalable products, branding, and digital marketing strategies to help you thrive in today's market.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="container py-5 bg-light rounded">
+  <h2 class="text-center mb-4"><span class="section-heading">Why Choose Us</span></h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="card h-100 text-white bg-primary border-0 shadow p-4">
+        <i class="bi bi-people-fill why-icon"></i>
+        <h5 class="card-title">Expert Team</h5>
+        <p class="card-text">Our professionals bring creativity, technical expertise, and passion to every project.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 text-white bg-success border-0 shadow p-4">
+        <i class="bi bi-hand-thumbs-up-fill why-icon"></i>
+        <h5 class="card-title">Customer Focus</h5>
+        <p class="card-text">We prioritize your vision and provide tailored solutions that meet your business needs.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 text-white bg-warning border-0 shadow p-4">
+        <i class="bi bi-clock-fill why-icon"></i>
+        <h5 class="card-title">Timely Delivery</h5>
+        <p class="card-text">We ensure prompt delivery without compromising on quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Projects Section -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center " ><span class="section-heading">Our Projects </span></h2>
+  <div class="row row-cols-1 row-cols-md-4 g-4" id="projectsContainer">
+    <!-- Projects will be loaded dynamically -->
+  </div>
+</section>
+<!--=========================================Consultation==============================================-->
+<div class="card mb-3 mx-auto" style="max-width: 1120px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="assets\images\pexels-fauxels-3182834.svg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title"><span class="section-heading">Get Free Consultation</span></h3>
+        <p class="card-text">We specialize in streamlining complex projects through efficient planning, execution, and delivery.
+Our solutions empower businesses to manage tasks, teams, and timelines with precision and clarity.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Happy Clients Section -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center"><span class="section-heading">Happy CLients</span></h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="clientsContainer">
+    <!-- Clients will be loaded dynamically -->
+  </div>
+</section>
+    <!-- Contact Form Section -->
+  
+<!-- Contact Form Section -->
+<section class="container my-5" id="Contact">
+  <h2 class="mb-4 text-center"><span class="section-heading">Contact Us</span></h2>
+  <div class="card shadow-lg border-0 bg-light p-4 mx-auto" style="max-width: 600px;">
+    <form class="needs-validation" id="contactForm" novalidate>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mobile" class="form-label">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobile" name="mobile" required>
+      </div>
+      <div class="mb-4">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" name="city" required>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="my-5 py-5 bg-light newsletter-section">
+  <div class="container-fluid">
+    <div class="card border-0 shadow-lg rounded-4 p-5 text-center bg-white">
+      <h2 class="fw-bold mb-3 text-primary">Subscribe to our Newsletter</h2>
+      <p class="text-muted fs-5 mb-4"> Get updates on new projects, blogs & more. No spam, we promise!</p>
+      
+      <form class="row gy-2 gx-3 justify-content-center" id="newsletterForm" novalidate>
+        <div class="col-12 col-md-8">
+          <input type="email" class="form-control form-control-lg rounded-pill px-4" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="col-12 col-md-4 d-grid">
+          <button type="submit" class="btn btn-primary btn-lg rounded-pill">Subscribe Now</button>
+        </div>
+      </form>
+
+      <div id="subscribeAlert" class="alert mt-4 d-none rounded-pill px-4" role="alert"></div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+      const API = 'http://localhost:5000/api';
+
+   // Load Projects
+async function loadProjects() {
+  try {
+    const res = await fetch(`${API}/projects`);
+    const projects = await res.json();
+    const container = document.getElementById('projectsContainer');
+    container.innerHTML = projects.map(p => `
+      <div class="col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="http://localhost:5000/uploads/${p.image}" class="card-img-top" alt="${p.name}">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">${p.name}</h5>
+            <p class="card-text">${p.description}</p>
+            <div class="mt-auto text-end">
+              <button class="btn btn-outline-primary btn-sm" disabled>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  } catch (err) {
+    console.error("Failed to load projects:", err);
+  }
+}
+
+
+      // Load Clients
+      async function loadClients() {
+        try {
+          const res = await fetch(`${API}/clients`);
+          const clients = await res.json();
+          const container = document.getElementById('clientsContainer');
+          container.innerHTML = clients.map(c => `
+            <div class="col">
+              <div class="card text-center">
+                <img src="http://localhost:5000/uploads/${c.image}" class="card-img-top rounded-circle mx-auto mt-3 w-50" alt="${c.name}">
+                <div class="card-body">
+                  <h5 class="card-title">${c.name}</h5>
+                  <h6 class="text-muted">${c.designation}</h6>
+                  <p class="card-text">${c.description}</p>
+                </div>
+              </div>
+            </div>
+          `).join('');
+        } catch (err) {
+          console.error("Failed to load clients:", err);
+        }
+      }
+
+      // Contact Form
+      document.getElementById('contactForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const form = new FormData(e.target);
+        const body = Object.fromEntries(form.entries());
+        try {
+          const res = await fetch(`${API}/contact`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+          });
+          const data = await res.json();
+          document.getElementById('formAlert').className = "alert alert-success";
+          document.getElementById('formAlert').textContent = data.message;
+          document.getElementById('formAlert').classList.remove('d-none');
+          e.target.reset();
+        } catch (err) {
+          console.error("Contact submit error:", err);
+        }
+      });
+
+      // Newsletter Form
+      document.getElementById('newsletterForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const form = new FormData(e.target);
+        const body = Object.fromEntries(form.entries());
+        try {
+          const res = await fetch(`${API}/subscribe`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+          });
+          const data = await res.json();
+          document.getElementById('subscribeAlert').className = "alert alert-info";
+          document.getElementById('subscribeAlert').textContent = data.message;
+          document.getElementById('subscribeAlert').classList.remove('d-none');
+          e.target.reset();
+        } catch (err) {
+          console.error("Subscribe error:", err);
+        }
+      });
+
+      // Load everything on page load
+      loadProjects();
+      loadClients();
+    </script>
+  </body>
+  </html>
